@@ -2,7 +2,7 @@
  * @Author: hxian 2232436248@qq.com
  * @Date: 2023-03-09 16:15:22
  * @LastEditors: hxian 2232436248@qq.com
- * @LastEditTime: 2023-03-09 18:01:04
+ * @LastEditTime: 2023-03-10 09:21:06
  * @FilePath: \my-app\src\view\projection\base\base.component.ts
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -12,7 +12,6 @@ import {
   Directive,
   TemplateRef,
   ContentChild,
-  ElementRef,
   OnInit,
   AfterContentInit,
 } from '@angular/core';

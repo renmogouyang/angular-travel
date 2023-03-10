@@ -19,5 +19,13 @@ export class SideBarComponent {
       label: '投影演示',
       link: 'projection-page',
     },
+    {
+      label: '动态组件',
+      link: 'dynamic-component',
+    },
+    {
+      label: '测试指令',
+      link: 'test-directive',
+    },
   ];
 }

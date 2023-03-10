@@ -12,6 +12,17 @@ import { ChildComponent } from '../component-msg/child/child.component';
 import { ProjectionComponent } from '../projection/projection.component';
 import { BaseComponent } from '../projection/base/base.component';
 import { BaseComponentDirective } from '../projection/base/base.component';
+
+import { ParentContent } from '../dynamic-component/parent.component';
+import { AdBanner } from '../dynamic-component/banner/banner.component';
+import { AdDirective } from '../dynamic-component/banner/ad/ad.directive';
+import { AdService } from '../dynamic-component/ad.service';
+import { MusicAd } from '../dynamic-component/banner/ad/musicAb.component';
+import { MilkAd } from '../dynamic-component/banner/ad/milkAd.component';
+
+// 指令测试
+import { TestDirectiveComponent } from '../directive/directive.component';
+import { TestDirective } from '../directive/test.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,9 +34,16 @@ import { BaseComponentDirective } from '../projection/base/base.component';
     ProjectionComponent,
     BaseComponent,
     BaseComponentDirective,
+    ParentContent,
+    AdBanner,
+    AdDirective,
+    MusicAd,
+    MilkAd,
+    TestDirective,
+    TestDirectiveComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
-  providers: [],
+  providers: [AdService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
