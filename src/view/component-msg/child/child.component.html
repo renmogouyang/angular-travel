@@ -1,0 +1,12 @@
+<div class="child">
+  <p>简单传值</p>
+  <p>{{ simpleMessage }}</p>
+  <p>变量</p>
+  <p>{{ varMessage }}</p>
+  <br />
+  <input (change)="onValueChange()" [value]="inputFor" type="number" />
+
+  <button (click)="changeValue()">改变</button>
+
+  
+</div>

@@ -1,0 +1,29 @@
+<div class="projection-page">
+  <p>单插插演示</p>
+  <div>
+    1.创建一个组件。 2.在组件模板中，添加 ng-content
+    元素，让你希望投影的内容出现在其中。
+  </div>
+  <base-component>
+    <p style="background-color: blue">父组件插入部分</p>
+  </base-component>
+
+  <p>多插槽投影演示</p>
+  <base-component>
+    <div style="background-color: darkgray" head>父组件插入head</div>
+    <div style="background: chartreuse" footer>父组件插入footer</div>
+  </base-component>
+
+  <p>有条件的投影演示</p>
+
+  <base-component [showFlag]="showFlag">
+    <ng-template otherName>这是父组件投影模板 </ng-template>
+  </base-component>
+</div>
+
+<style>
+  p {
+    padding: 10px;
+    margin-bottom: 8px;
+  }
+</style>

@@ -1,0 +1,37 @@
+<div class="parent">
+	 <h3>console查看父子组件生命周期</h3>
+	<child (numberOneChange)="changeChildInput()" [inputFor]="inputFor" [simpleMessage]="'简单的message'"/>
+	<!-- <child [varMessage]="varMessage"/> -->
+
+	<p class="red">演示样式绑定</p>
+	<p [class]="'red f-white'">演示样式绑定字符串</p>
+	<p  [class]="cssVar">演示样式绑定变量</p>
+	<p  [class]="[cssFlag? 'red':'green',!cssFlag?'f-white':'f-red']">演示样式绑定变量三元</p>
+
+</div>
+
+<style>
+	.red{
+		background: red;
+	}
+
+	.f-white{
+		color: white;
+	}
+
+	.f-red{
+		color: red;
+	}
+
+	.yellow{
+		background: yellow;
+	}
+	.green{
+		background: green;
+	}
+	p{
+		box-sizing: border-box;
+		padding: 10px;
+		margin-bottom: 8px;
+	}
+</style>
